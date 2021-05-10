@@ -40,11 +40,6 @@ def get_label(file_path):
   parts = tf.strings.split(file_path, '\\')
   label = tf.strings.split(parts, '_')
   return label[-1][0]
-
-# def get_test_label(file_path):
-#   parts = tf.strings.split(file_path, '\\')
-#   label=tf.strings.split(parts, '_')
-#   print(label)
   
 def get_waveform_and_label(file_path):
   label = get_label(file_path)
